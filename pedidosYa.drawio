@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-06T16:22:07.870Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" etag="3k7WyLexjF2j-6hBUNcE" version="20.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-06T16:23:05.002Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.35" etag="73huz3IMQ2WGT6UNHejI" version="20.5.2" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="782" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -144,10 +144,10 @@
         <mxCell id="NOBm52GwCNogS5OB4yYK-27" value="PK&amp;nbsp; &amp;nbsp;id int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="NOBm52GwCNogS5OB4yYK-26">
           <mxGeometry y="30" width="210" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NOBm52GwCNogS5OB4yYK-28" value="monto float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="NOBm52GwCNogS5OB4yYK-26">
+        <mxCell id="NOBm52GwCNogS5OB4yYK-28" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; monto float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="NOBm52GwCNogS5OB4yYK-26">
           <mxGeometry y="60" width="210" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NOBm52GwCNogS5OB4yYK-29" value="tipo_de_pago var" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="NOBm52GwCNogS5OB4yYK-26">
+        <mxCell id="NOBm52GwCNogS5OB4yYK-29" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; tipo_de_pago var" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="NOBm52GwCNogS5OB4yYK-26">
           <mxGeometry y="90" width="210" height="30" as="geometry" />
         </mxCell>
       </root>
