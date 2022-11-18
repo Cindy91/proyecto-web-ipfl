@@ -1,36 +1,36 @@
-{ margin:0;
-  padding:0;  
+* { 
+    margin:0;
+    padding:0;  
+}
+
+body{
+       
+    background-image: url(png/fondo\ blanco.jpg);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
 
 }
 
-    body{
-       
-        background-image: url(png/fondo\ blanco.jpg);   
-        background-size: cover;
-        background-position: center;
-        font-family: sans-serif;
+div img {
+width: 50%;
+border-style: solid;
 
-    }
+transition: all 0.5s linear;
 
-   div img {
-    width: 50%;
-    border-style: solid;
-    
+}
+   
+img:hover{
+    scale: (0.9);
+
+}
+img {
     transition: all 0.5s linear;
-    
-   }
-   
-    img:hover{
-        scale: (0.9);
+}
 
-    }
-    img {
-        transition: all 0.5s linear;
-    }
-   
-    .separador1 {
-        height: 15px;
-    }
+.separador1 {
+    height: 15px;
+}
 
 
 nav {
@@ -62,4 +62,3 @@ a:hover{
     color:lightslategray;
 }
 
-{}
