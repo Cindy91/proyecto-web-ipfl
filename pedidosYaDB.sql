@@ -1,3 +1,5 @@
+CREATE DATABASE;
+
 CREATE TABLE usuario (
 	id_usuario int PRIMARY KEY,
 	nombre_usuario VARCHAR (25),
@@ -64,10 +66,16 @@ INSERT INTO pedido values (344, 28345, 104, 005, 1, 3460);
 /*a. Hacer un select que una los pedidos y los usuarios que los hicieron. Visualizar solo las columnas de
 nombre de usuario, el producto, la cantidad y el monto.*/
 
+SELECT nombre_usuario, producto, cantidad, monto
+from usuario, pedido
+WHERE id_usuario = usuario;
 
 /*b. Hacer un select que una los pedidos y las facturas de esos pedidos. Visualizar solo las columnas de
 producto, el monto y el medio de pago.*/
 
+SELECT producto, factura.monto, tipo_de_pago
+from pedido, factura
+WHERE (id_factura = id and pedido.monto = factura.monto);
 
 /*c. Hacer un select que una los pedidos y los productos de esos pedidos. Visualizar solo las columnas
 de descripción, cantidad y monto.*/
@@ -75,6 +83,7 @@ de descripción, cantidad y monto.*/
 
 /*d. Crear una selección de todos los productos que son pagados con efectivo.*/
 
+SELECT 
 
 /*e. Seleccionar los usuarios que hayan hecho algún pedido.*/
 

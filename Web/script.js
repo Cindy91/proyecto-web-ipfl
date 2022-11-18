@@ -1,25 +1,18 @@
-/*const { Button } = require("bootstrap");
-
-Button.onclick(go);
-
-function go(){
-
-if (document.form.clave.value=='CONTRASEÑA' && document.form.login.value=='USUARIO'){ 
-        document.form.submit(); 
-    } 
-    else{ 
-         alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
-    } 
-}*/
-
-btn.addEventListener('click', function validar(){
+function validar(){
     var email= document.getElementById("inputEmail3");
     var clave= document.getElementById("inputPassword3");
 
-    if (email.value== "123@456" && clave== "123456"){
-
+    if (email.value== "123@456" && clave.value== "123456"){
+        window.location.href="./index.html";
     }
     else {
         alert("Introduzca un email y contraseña correctos");
     }
+}
+
+let button = document.getElementById("button");
+
+button.addEventListener("click", (e)=> {
+    e.preventDefault();
+    validar();
 })
