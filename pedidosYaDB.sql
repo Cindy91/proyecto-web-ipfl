@@ -1,14 +1,14 @@
 CREATE TABLE usuario (
 	id_usuario int PRIMARY KEY,
-	nombre_usuario VARCHAR,
-	contraseña VARCHAR,
-	direccion VARCHAR
+	nombre_usuario VARCHAR (25),
+	contraseña VARCHAR (25),
+	direccion VARCHAR (25)
 );
 
 CREATE TABLE producto (
 	id_producto int PRIMARY key,
-	descripcion VARCHAR,
-	proveedor VARCHAR
+	descripcion VARCHAR (25),
+	proveedor VARCHAR (25)
 );
 
 ALTER TABLE producto ADD precio FLOAT;
@@ -16,7 +16,7 @@ ALTER TABLE producto ADD precio FLOAT;
 CREATE TABLE factura (
 	id int NOT NULL PRIMARY KEY,
 	monto FLOAT NOT NULL,
-	tipo_de_pago VARCHAR
+	tipo_de_pago VARCHAR (25)
 );
 
 CREATE TABLE pedido (
