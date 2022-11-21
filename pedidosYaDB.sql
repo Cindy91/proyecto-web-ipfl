@@ -1,4 +1,4 @@
-CREATE DATABASE;
+CREATE DATABASE finalipfl;
 
 CREATE TABLE usuario (
 	id_usuario int PRIMARY KEY,
