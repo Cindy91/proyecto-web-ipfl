@@ -3,20 +3,61 @@
 }
 
 html {
-  height: 100%;
+  min-height: 100%;
+  position: relative;
 }
 
 .nav{
     display: flex;
     justify-content: center;
     margin: 2em;
-    background: linear-gradient(#141e30, #243b55);
-    transform: translate(-50%, -50%);
-    background: rgba(0,0,0,.5);
+}
+
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    animation: pulsate 0.11s ease-in-out infinite alternate; 
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+    /*text-shadow: [x-offset] [y-offset] [blur-radius] [color];*/
+}
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+  }
+ 0% {
+    /* A slightly smaller blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      0 0 10px #fff,
+      0 0 18px #fff,
+      0 0 38px #f09,
+      0 0 73px #f09,
+      0 0 80px #f09,
+      0 0 94px #f09,
+      0 0 140px #f09;
+  }
 }
 
 body {
-    height: 100%;
+    height: 33.3%;
     margin:0;
     padding:0;
     background: linear-gradient(#141e30, #243b55);
@@ -24,7 +65,7 @@ body {
 
 main{
     position: relative;
-    height: 100%;
+    height: 33.3%;
 }
 
 .login-box {
@@ -189,14 +230,14 @@ main{
 footer{
     position: relative;
     justify-content: center;
+    height: 33.3%;
 }
 
 .copyright{
-    background-color: silver;
     position: absolute;
     justify-content: center;
     width: 100%;
-    height: 5em;
+    height: 100%;
     margin-left:auto;
     margin-right:auto;
     margin-bottom: -50%;
@@ -208,5 +249,11 @@ footer{
 
 p{
     text-align: center;
+    color: #fff;
 }
 
+@media screen and (prefers-reduced-motion) { 
+  .navbar-brand, .login-box a span{
+    animation: none;
+  }
+}
