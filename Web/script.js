@@ -1,18 +1,18 @@
 function validar(){
-    var email= document.getElementById("inputEmail3");
-    var clave= document.getElementById("inputPassword3");
+    var usuario= document.getElementById("usuario");
+    var clave= document.getElementById("clave");
 
-    if (email.value== "123@456" && clave.value== "123456"){
+    if (usuario.value== "123@456" && clave.value== "123456"){
         window.location.href="./index.html";
     }
     else {
-        alert("Introduzca un email y contraseña correctos");
+        alert("Introduzca un usuario y contraseña correctos");
     }
 }
 
-let button = document.getElementById("button");
+let submit= document.getElementById("#submit");
 
-button.addEventListener("click", (e)=> {
+this.submit.addEventListener("click", (e)=> {
     e.preventDefault();
     validar();
 })
