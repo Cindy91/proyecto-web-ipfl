@@ -61,6 +61,9 @@ INSERT INTO pedido values (342, 26485, 102, 003, 1, 960.5);
 INSERT INTO pedido values (343, 27853, 103, 004, 1, 2488.9);
 INSERT INTO pedido values (344, 28345, 104, 005, 1, 3460);
 
+INSERT INTO factura values (29466, 455.5, 'aplicación');
+INSERT INTO factura values (30455, 1599.9, 'aplicación');
+
 --Consultas. 
 
 /*a. Hacer un select que una los pedidos y los usuarios que los hicieron. Visualizar solo las columnas de
@@ -81,18 +84,20 @@ WHERE (id_factura = id and pedido.monto = factura.monto);
 de descripción, cantidad y monto.*/
 
 SELECT descripcion, cantidad, monto
-from pedido, producto;
+from pedido
+INNER join producto
+on producto = id_producto;
 
 /*d. Crear una selección de todos los productos que son pagados con efectivo.*/
 
-SELECT descripcion
-FROM producto, pedido
+SELECT producto
+FROM pedido
 inner join factura
 on id = id_factura;
 
 /*e. Seleccionar los usuarios que hayan hecho algún pedido.*/
 
-SELECT id_usuario
+SELECT id_usuario, nombre_usuario
 from usuario
 INNER join pedido
 ON id_usuario = usuario;
@@ -105,6 +110,6 @@ WHERE monto > 500;
 
 /*g. Cambiar todas las facturas que digan aplicación a débito.*/
 
-UPDATE TABLE factura,
-SET tipo_de_pago = débito,
-WHERE tipo_de_pago = aplicación;
+UPDATE TABLE factura
+SET tipo_de_pago = 'débito'
+WHERE tipo_de_pago = 'aplicación';
