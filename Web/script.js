@@ -2,7 +2,7 @@ function validar(){
     var usuario= document.getElementById("usuario");
     var clave= document.getElementById("clave");
 
-    if (usuario.value== "123@456" && clave.value== "123456"){
+    if (usuario.value== "usuario" && clave.value== "123456"){
         window.location.href="./index.html";
     }
     else {
