@@ -53,7 +53,7 @@ INSERT INTO factura values (24563, 3499.99, 'efectivo');
 INSERT INTO factura values (25699, 1899, 'débito');
 INSERT INTO factura values (26485, 960.5, 'efectivo');
 INSERT INTO factura values (27853, 2488.9, 'crédito');
-INSERT INTO factura values (28345, 3460, 'débito');
+INSERT INTO factura values (28345, 3460, 'aplicación');
 
 INSERT INTO pedido values (340, 24563, 100, 001, 1, 3499.99);
 INSERT INTO pedido values (341, 25699, 101, 002, 1, 1899);
@@ -61,7 +61,7 @@ INSERT INTO pedido values (342, 26485, 102, 003, 1, 960.5);
 INSERT INTO pedido values (343, 27853, 103, 004, 1, 2488.9);
 INSERT INTO pedido values (344, 28345, 104, 005, 1, 3460);
 
---Consultas.
+--Consultas. 
 
 /*a. Hacer un select que una los pedidos y los usuarios que los hicieron. Visualizar solo las columnas de
 nombre de usuario, el producto, la cantidad y el monto.*/
@@ -80,16 +80,31 @@ WHERE (id_factura = id and pedido.monto = factura.monto);
 /*c. Hacer un select que una los pedidos y los productos de esos pedidos. Visualizar solo las columnas
 de descripción, cantidad y monto.*/
 
+SELECT descripcion, cantidad, monto
+from pedido, producto;
 
 /*d. Crear una selección de todos los productos que son pagados con efectivo.*/
 
-SELECT 
+SELECT descripcion
+FROM producto, pedido
+inner join factura
+on id = id_factura;
 
 /*e. Seleccionar los usuarios que hayan hecho algún pedido.*/
 
+SELECT id_usuario
+from usuario
+INNER join pedido
+ON id_usuario = usuario;
 
 /*f. Seleccionar todas las facturas por un monto mayor a 500.*/
 
+SELECT monto
+from factura
+WHERE monto > 500;
 
 /*g. Cambiar todas las facturas que digan aplicación a débito.*/
 
+UPDATE TABLE factura,
+SET tipo_de_pago = débito,
+WHERE tipo_de_pago = aplicación;
