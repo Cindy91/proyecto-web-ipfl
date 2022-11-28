@@ -1,0 +1,46 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-item {
+    height: 400px;
+    object-fit: contain;
+    object-position: 0 80%;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption {
+    font-family: 'Pacifico';
+    font-size: 34px;
+    -webkit-text-stroke: 2px black;
+    color: #fff;
+    animation: pulsate 0.11s ease-in-out infinite alternate; 
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+    bottom: 0;
+}
+
+.card-group {
+    margin-top: 4em;
+}
+
+.card-text {
+    color: black;
+}
