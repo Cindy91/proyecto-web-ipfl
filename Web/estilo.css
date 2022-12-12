@@ -11,3 +11,8 @@
 lottie-player{
     width: 500px;
 }
+
+.card-group{
+    margin-top: 0;
+    margin-bottom: 0;
+}
